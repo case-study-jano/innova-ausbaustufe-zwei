@@ -1,0 +1,107 @@
+{
+  "components": [
+    {
+      "text": "### Innovationsantrag",
+      "label": "Text view",
+      "type": "text",
+      "layout": {
+        "row": "Row_0ksbsao",
+        "columns": null
+      },
+      "id": "Field_1roq5xx"
+    },
+    {
+      "label": "Anträger",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_019w0ad",
+        "columns": null
+      },
+      "id": "Field_1bj59ig",
+      "key": "creatorName",
+      "disabled": true
+    },
+    {
+      "label": "Titel",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_1n0fnuk",
+        "columns": null
+      },
+      "id": "Field_0kp9paz",
+      "key": "proposalTitle",
+      "validate": {
+        "required": false,
+        "minLength": 3,
+        "maxLength": 80
+      },
+      "disabled": true
+    },
+    {
+      "label": "Innovationsbeschreibung",
+      "type": "textarea",
+      "layout": {
+        "row": "Row_0j8lptb",
+        "columns": null
+      },
+      "id": "Field_03tkuqb",
+      "key": "proposalDescription",
+      "validate": {
+        "required": false,
+        "minLength": 10,
+        "maxLength": 1000
+      },
+      "disabled": true
+    },
+    {
+      "values": [
+        {
+          "label": "Annehmen",
+          "value": "approved"
+        },
+        {
+          "label": "Rückfrage stellen",
+          "value": "questioned"
+        }
+      ],
+      "label": "Diesen Antrag...",
+      "type": "radio",
+      "layout": {
+        "row": "Row_0aqb9ds",
+        "columns": null
+      },
+      "id": "Field_086au29",
+      "key": "boardProposalDecision",
+      "defaultValue": "value",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "label": "Kommentar",
+      "type": "textarea",
+      "layout": {
+        "row": "Row_1h3dsfy",
+        "columns": null
+      },
+      "id": "Field_0mwz2kz",
+      "key": "boardComment",
+      "readonly": false,
+      "conditional": {
+        "hide": "=boardProposalDecision = \"approved\""
+      },
+      "validate": {
+        "required": true
+      }
+    }
+  ],
+  "type": "default",
+  "id": "form_create_innovation_proposal",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.26.0"
+  },
+  "executionPlatform": "Camunda Platform",
+  "executionPlatformVersion": "7.21.0",
+  "schemaVersion": 16
+}

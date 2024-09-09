@@ -1,0 +1,58 @@
+{
+  "components": [
+    {
+      "label": "Name des Erfassers",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_0xor08e",
+        "columns": null
+      },
+      "id": "Field_0ieh92l",
+      "key": "creatorName",
+      "validate": {
+        "required": true,
+        "minLength": 2
+      }
+    },
+    {
+      "label": "Titel",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_1n0fnuk",
+        "columns": null
+      },
+      "id": "Field_0kp9paz",
+      "key": "proposalTitle",
+      "validate": {
+        "required": true,
+        "minLength": 3,
+        "maxLength": 80
+      }
+    },
+    {
+      "label": "Innovationsbeschreibung",
+      "type": "textarea",
+      "layout": {
+        "row": "Row_0j8lptb",
+        "columns": null
+      },
+      "id": "Field_03tkuqb",
+      "key": "proposalDescription",
+      "description": "Beschreibe Deine Innovationsidee ausführlich. Was soll sich verändern? Welches Problem wird dadurch gelöst? etc.",
+      "validate": {
+        "required": true,
+        "minLength": 10,
+        "maxLength": 1000
+      }
+    }
+  ],
+  "type": "default",
+  "id": "form_create_innovation_proposal",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.26.0"
+  },
+  "executionPlatform": "Camunda Platform",
+  "executionPlatformVersion": "7.21.0",
+  "schemaVersion": 16
+}
